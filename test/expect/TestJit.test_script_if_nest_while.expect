@@ -10,7 +10,7 @@ graph(%a : UNKNOWN_TYPE
         block0(%6 : UNKNOWN_TYPE, %7 : UNKNOWN_TYPE, %8 : UNKNOWN_TYPE, %12 : UNKNOWN_TYPE) {
           %9 : UNKNOWN_TYPE = Constant[value={1}]()
           %10 : UNKNOWN_TYPE = add[alpha={1}](%8, %9)
-          %11 : UNKNOWN_TYPE = neg[alpha={1}](%10)
+          %11 : UNKNOWN_TYPE = neg(%10)
           %14 : UNKNOWN_TYPE = gt(%a, %10)
           -> (%14, %10, %11)
         }

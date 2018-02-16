@@ -13,11 +13,11 @@ graph(%a : UNKNOWN_TYPE
       %14 : UNKNOWN_TYPE = gt(%10, %13)
       %17 : UNKNOWN_TYPE = If(%14)
         block0() {
-          %15 : UNKNOWN_TYPE = neg[alpha={1}](%10)
+          %15 : UNKNOWN_TYPE = neg(%10)
           -> (%15)
         }
         block1() {
-          %16 : UNKNOWN_TYPE = neg[alpha={1}](%13)
+          %16 : UNKNOWN_TYPE = neg(%13)
           -> (%16)
         }
       %19 : UNKNOWN_TYPE = Constant[value={10}]()
